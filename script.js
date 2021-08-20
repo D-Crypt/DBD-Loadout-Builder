@@ -43,6 +43,13 @@ const perkList = [
     new Perk("Detective's Hunch", "Tapp", ["Aura", "Generator", "Chest", "Totem", "Item"]),
     new Perk("Distortion", "Jeff", ["Token", "Aura", "Scratch Marks", "Stealth"]),
     new Perk("Diversion", "Adam", ["Terror Radius", "Distraction", "Scratch Marks"]),
+
+    new Perk("Empathy", "Claudette", ["Aura"]),
+    new Perk("Fast Track", "Yun-Jin", ["Hook", "Token", "Skill Checks", "Generator"]),
+    new Perk("Fixated", "Nancy", ["Movement Speed", "Scratch Marks"]),
+    new Perk("Flashbang", "Leon", ["Generator", "Locker", "Item", "Stun"]),
+    new Perk("Flip-Flop", "Ash", ["Wiggle speed"]),
+    new Perk("For the People", "Zarina", ["Healing", "Obsession"]),
 ];
 
 function filterPerks() {
