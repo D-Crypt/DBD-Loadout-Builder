@@ -8,7 +8,6 @@ class Perk {
 
 const perkList = [
     new Perk("Adrenaline", "Meg", ["Healing", "Exhaustion", "Movement speed"]),
-    new Perk("Adrenaline", "Meg", ["Healing", "Exhaustion", "Movement speed"]),
     new Perk("Aftercare", "Jeff", ["Aura", "Hook", "Healing"]),
     new Perk("Alert", "Feng", ["Pallet", "Wall", "Generator", "Aura"]),
     new Perk("Any Means Necessary", "Yui", ["Pallet"]),
@@ -32,4 +31,24 @@ const perkList = [
     new Perk("Calm Spirit", "Jake", ["Stealth"]),
     new Perk("Camaraderie", "Steve", ["Hook"]),
     new Perk("Counterforce", "Jill", ["Totem", "Aura"]),
+
+    new Perk("Dance With Me", "Kate", ["Window", "Locker", "Scratch Marks", "Stealth"]),
+    new Perk("Dark Sense", "All", ["Generator", "Aura"]),
+    new Perk("Dead Hard", "David", ["Exhaustion"]),
+    new Perk("Deception", "Elodie", ["Locker", "Distraction", "Scratch Marks", "Pools of Blood", "Stealth"]),
+    new Perk("Decisive Strike", "Laurie", ["Hook", "Skill Checks", "Stun", "Obsession"]),
+    new Perk("Deja Vu", "All", ["Aura", "Generator", "Item"]),
+    new Perk("Deliverance", "Adam", ["Hook"]),
+    new Perk("Desperate Measures", "Felix", ["Healing", "Hook"]),
+    new Perk("Detective's Hunch", "Tapp", ["Aura", "Generator", "Chest", "Totem", "Item"]),
+    new Perk("Distortion", "Jeff", ["Token", "Aura", "Scratch Marks", "Stealth"]),
+    new Perk("Diversion", "Adam", ["Terror Radius", "Distraction", "Scratch Marks"]),
 ];
+
+function filterPerks() {
+    perkList.forEach(perk => {
+        if (perk.type.includes("Item" || "Stealth")) {
+            console.log(perk.name);
+        }
+    });
+}
