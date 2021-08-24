@@ -77,8 +77,8 @@ const survivorPerks = [
     new Perk("Off the Record", "Zarina", ["Unhook", "Aura", "Grunts of Pain", "Stealth"]),
     new Perk("Open-Handed", "Ace", ["Aura"]),
 
-    new Perk("Pharmacy", "Quentin", ["Unlocking", "Chests", "Item", "Stealth"]),
-    new Perk("Plunderer's Instinct", "All", ["Aura", "Chests", "Items", "Luck"]),
+    new Perk("Pharmacy", "Quentin", ["Unlocking", "Chest", "Item", "Stealth"]),
+    new Perk("Plunderer's Instinct", "All", ["Aura", "Chest", "Items", "Luck"]),
     new Perk("Poised", "Jane", ["Generator", "Scratch Marks", "Stealth"]),
     new Perk("Power Struggle", "Elodie", ["Wiggling", "Pallet", "Stun"]),
     new Perk("Premonition", "All", ["Detection"]),
@@ -124,9 +124,9 @@ const survivorPerks = [
     new Perk("Windows of Opportunity", "Kate", ["Aura", "Wall", "Pallet", "Window"])
 ];
 
-function filterPerks(perkList) {
+function filterPerks(perkList, perkTypes) {
     perkList.forEach(perk => {
-        if (perk.type.includes("Stealth")) {
+        if (perk.type.includes("Stealth") && perk.type.includes("Chest")) {
             console.log(perk.name);
         }
     });
